@@ -1,0 +1,216 @@
+<!DOCTYPE html><!-- Indico el tipo HTML --><!--solo es el primer cambio para GIT--><!-- Cambio en Dev -->
+<html><!-- Comienzo con la eqiqueta de apertura HTML -->
+    <head><!-- Comienzo con la eqiqueta de apertura de la cabecera -->
+        <title>todobebe</title>  <!-- titulo solapa de mi paginas -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+       
+      
+    </head>
+<body>
+ <!-- Pag 1 Pag Principal --> 
+    <!-- Agrego Navbar  --> <!-- Barra de Navegacion (Principal superior Izquierda) --> 
+    <div class="tbebe-top tbebe-hide-small">
+        <div class="tbebe-bar tbebe-xlarge tbebe-black tbebe-opacity tbebe-hover-opacity-off" id="myNavbar">
+            <a href="#" class="tbebe-bar-item tbebe-button">PAGINA PRINCIPAL</a> <!-- BOTON a PAG 1 -->
+            <a href="#menu" class="tbebe-bar-item tbebe-button">OPCIONES PACKS BEBES</a> <!-- BOTON a PAG 2 -->
+            <a href="#about" class="tbebe-bar-item tbebe-button">ACERCA DE NOSOTROS</a><!-- BOTON a PAG 3 -->
+            <a href="#encontrarnos" class="tbebe-bar-item tbebe-button">DONDE ENCONTRARNOS</a><!-- BOTON a PAG 4 -->
+            <a href="#contacto" class="tbebe-bar-item tbebe-button">CONTACTO</a><!-- BOTON a PAG 5 -->
+           
+        </div>
+    </div>
+
+    <!-- Agrego un Header con imagen -->
+    <header class="bgimg tbebe-display-container tbebe-grayscale-min" id="home">
+        <div class="tbebe-display-bottomleft tbebe-padding">
+            <span class="tbebe-tag tbebe-xlarge">2022 Por Federico Romero Trabajo Practico Coder-Todos los derechos Reservados</span>
+        </div> <!-- Pie de Pagina 1 Pag Principal derechos reservados -->
+        <div class="tbebe-display-middle tbebe-center">
+            <span class="tbebe-text-white tbebe-hide-small tbebe-title1">Bienvenidos a TODOBEBE</span><!--Titulo Pag pincipal-->
+            <span class="tbebe-text-white tbebe-hide-large tbebe-hide-medium tbebe-title1"><b>Bienvenidos a TODOBEBE </b></span><!--Titulo Pag pincipal-->
+            <p><a href="#menu" class="tbebe-button tbebe-xxlarge tbebe-black">Ver los distintos Packs BEBES</a></p><!--Boton navegable pag principal-->
+        </div>
+    </header>
+
+    <!--Pag 2  Menu Container 3 opciones de Packs -->
+    <div class="tbebe-container tbebe-black tbebe-padding-64 tbebe-xxlarge" id="menu">
+        <div class="tbebe-content">
+
+         <h1 class="tbebe-center tbebe-jumbo tbebe-packs">Packs BEBES</h1><!-- Titulo proncipal Pag 2 -->
+        <div class="tbebe-row tbebe-center tbebe-border tbebe-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'reciennacido');" id="myLink">
+                    <div class="tbebe-col s4 tablink tbebe-padding-large tbebe-hover-red">Packs Recien Nacidos</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Nenesbasico');">
+                    <div class="tbebe-col s4 tablink tbebe-padding-large tbebe-hover-red">Packs Nenes</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Nenasbasico');">
+                    <div class="tbebe-col s4 tablink tbebe-padding-large tbebe-hover-red">Packs Nenas</div>
+                </a>
+         </div>
+
+         <div id="reciennacido" class="tbebe-container menu tbebe-padding-32 tbebe-white"> <!-- Menu 1 Bebes -->
+                <h1><b>Pack Recien Nacido Basico</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$8.000</span></h1>
+                <p class="tbebe-text-grey">Cambiador, Pañales, Mamadera, Conjunto de Salida</p>
+                <hr>
+
+                <h1><b>Pack Recien Nacido Intermedio</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$1.000/Descuento especial></h1>
+                <p class="tbebe-text-grey">Cambiador, Pañales, Mamadera, Conjunto de Salida, Oleo, Algodón</p>
+                <hr>
+
+                <h1><b>Pack Recien Nacido PRO</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$16.000</span></h1>
+                <p class="tbebe-text-grey">Cambiador grande y chico, Pañales, Set Mamaderas, Conjuntos de Salida, Oleo, Algodón</p>
+                <hr>
+
+                <h1><b>Pack Habitacion Basica</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$40.000</span></h1>
+                <p class="tbebe-text-grey">Colecho, colchon, 1 juego de sabanas</p>
+                <hr>
+
+                <h1><b>Pack Habitacion Intermedia</b> <span class="tbebe-tag tbebe-verdeaqua tbebe-round">20%Descuento!</span><span
+                        class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$50.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+                <hr>
+
+                <h1><b>Pack Habitacion PRO</b> <span class="tbebe-tag tbebe-grey tbebe-round">Nuevo Ingreso a Todo Bebe</span><span
+                        class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$60.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+            </div>
+
+            <div id="Nenesbasico" class="tbebe-container menu tbebe-padding-32 tbebe-white"> <!-- Menu 2 Nenes -->
+                <h1><b>Pack Nenes Basico</b> <span class="tbebe-tag tbebe-grey tbebe-round">Popular</span> <span
+                        class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$8.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+                <hr>
+
+                <h1><b>Pack Nenes Intermedio</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$10.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+                <hr>
+
+                <h1><b>Pack Nenes PRO</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$12.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+                <hr>
+
+                <h1><b>Completar Habitacion Nenes</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$40.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+            </div>
+
+
+            <div id="Nenasbasico" class="tbebe-container menu tbebe-padding-32 tbebe-white"> <!-- Menu 3 Nenas -->
+                <h1><b>Pack Nenas Basico</b> <span class="tbebe-tag tbebe-grey tbebe-round">Mas comprado</span><span
+                        class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$8.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+                <hr>
+
+                <h1><b>Pack Nenas Intermedio</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$10.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+                <hr>
+
+                <h1><b>Pack Nenas Pro</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$12.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+                <hr>
+
+                <h1><b>Completar Habitacion Nenas</b> <span class="tbebe-right tbebe-tag tbebe-dark-grey tbebe-round">$40.000</span></h1>
+                <p class="tbebe-text-grey">A completar</p>
+            </div>
+
+        </div>
+    </div>
+
+      <!-- Tercer pag Acerca de Nosotros -->
+    <div class="tbebe-container tbebe-padding-64 tbebe-verdeaqua tbebe-grayscale tbebe-xlarge" id="about">
+        <div class="tbebe-content">
+            <h1 class="tbebe-center tbebe-jumbo tbebe-packs">¿Que es Todo bebe?</h1>
+            <p>Todo bebe pronto sera un local y asistente de ventas que te permite asesorarte sobre compras para tu bebe, y obener todo
+                para tu recien nacido, asegurandote un precio bajo y la mejor calidad. Asi vos solo te ocupas de disfrutarlo
+            </p>
+            <p><strong>Creador</strong> Lic en Economía Federico Romero<img src="media/imagenes/bebe4.jpg" 
+                    class="tbebe-circle tbebe-right tbebe-creator" alt="Chef"></p>
+            <p>Con la ultima tecnologia en Ciencia de datos te aseguramos un buen precio y la mejor calidad</p>
+            <img src="media/imagenes/bebe1.png" class="tbebe-margin-top tbebe-margin-bottom tbebe-imagenbebe"
+                alt="Restaurant">
+
+
+    <!-- Image of location/map -->
+    <img src="media/imagenes/mapa1.png" class="tbebe-image tbebe-greyscale"  id="encontrarnos"
+    important div { 
+        margin: 0px 50px 0px 50px;
+    
+       }
+       >
+    <!-- Cuarta pag ¿Donde encontrarnos? -->
+       <h1><b> ¿Donde y como encontrarnos? </b></h1 >
+
+        <div class="tbebe-row" >
+            <div class="tbebe-col s6">
+                <p>Proximamente Local en Boedo.. Visita el Showroom a metros de San Juan y bedo</p>
+                <p>De lunes a Viernes 11 a 19</p>
+                <p>Sabados 11 a 14</p>
+                <p>Domingos Cerrado</p>
+            </div>
+            <div class="tbebe-col s6">
+                <p>A traves de nuestra Pagina Web</p>
+                <p>De lunes a Domingos 24hs</p>
+                <p> Mira nuestros productos </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Quinta pag Contacto Formulario de pedidos-->
+    <div class="tbebe-container tbebe-padding-64 tbebe-blue-grey tbebe-grayscale-min tbebe-xlarge" id="contacto">
+        <div class="tbebe-content">
+            <h1 class="tbebe-center tbebe-jumbo tbebe-packs">Contactenos</h1>
+            <p>Estamos para ayudarlo con la mejor calidad</p>
+            <p><span class="tbebe-tag">Comuniquese con nosotros!</span> Comuniquese con nosotros! y reciba en menos de 1 hora 
+                el asesoramiento que usted y su hijo merecen.</p>
+            <p class="tbebe-xxlarge"><strong>Compre los mejores productos</strong> Complete el formulario y obtenga un 
+                asesoramiento personalizado
+            </p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="tbebe-input tbebe-padding-16 tbebe-border" type="text" placeholder="Nombre del Pack: Ej Pack Recien Nacido Basico, Pack Recien Nacido Intermedio, a completar" required name="Nombre del Pack">
+                </p>  <!-- Primer campo-->
+                <p><input class="tbebe-input tbebe-padding-16 tbebe-border" type="number" placeholder="Coloque la cantidad de Packs Pack que le interesa" required
+                        name="cantidad de Packs Pack"></p><!-- segundo campo-->
+                <p><input class="tbebe-input tbebe-padding-16 tbebe-border" type="datetime-local" placeholder="Dia y Hora del pedido"
+                        required name="date" value="2020-11-16T20:00"></p><!-- Tercer campo-->
+                <p><input class="tbebe-input tbebe-padding-16 tbebe-border" type="text"
+                        placeholder="Deje su Nomre y mail de contacto" required name="Deje su Contacto"></p> <!-- cuarto campo-->
+                <p><button class="tbebe-button tbebe-light-grey tbebe-block" type="submit">Mandar Pedido de Informacion</button></p> <!-- Boton mandar  pedidos-->
+            </form>
+        </div>
+    </div>
+
+    <!-- Agrego un pie de pag -->
+    <footer class="tbebe-center tbebe-black tbebe-padding-48 tbebe-xxlarge">
+    <p>2022 Por Federico Romero Trabajo Practico Coder-Todos los derechos Reservados</p> <!--Pie de pagina ultima Pag -->
+    <a class="tbebe-button tbebe-round-xxlarge tbebe-dark-grey tbebe-margin-bottom" href="media/imagenes/enconstruccion.png" target="_blank">Compre Ahora</a>
+    <!--  en la parte inferior izquierda agrego un pie de pagina con los derechos. -->
+    </footer>
+
+    <script>
+        // Menú con pestañas con javascrit, lo importe de una pagina con codigo
+        function openMenu(evt, menuName) {
+        var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" tbebe-verdeaqua", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " tbebe-verdeaqua";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
